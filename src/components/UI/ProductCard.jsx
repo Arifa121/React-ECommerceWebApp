@@ -4,9 +4,27 @@ import "../../styles/ProductCard.css";
 import { Col } from "reactstrap";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-const ProductCard = ({item}) => {
+import PropTypes from "prop-types";
+
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../redux/slices/cartSlice";
+
+const ProductCard = ({ item }) => {
+  const dispatch = useDispatch();
+  const addToCart = () => {
+    dispatch(
+      cartActions.addItem({
+        id: item.id,
+        productName: item.productName,
+        image: item.imgUrl,
+        price: item.price,
+      }),
+    );
+    alert("product added to cart");
+  };
+
   return (
-    <Col lg="3" md="4" sm="6" xs="12">
+    <Col lg="3" md="4" sm="6" xs="12" className="mb-2 ">
       <div className="product__item">
         <div className="product__img d-flex justify-content-center">
           <motion.img
@@ -18,13 +36,13 @@ const ProductCard = ({item}) => {
         </div>
         <div className="p-2 product__info">
           <h3 className="product__name">
-            <Link to="/shop/id">Modern Armchair</Link>
+            <Link to={`/shop/${item.id}`}>{item.productName}</Link>
           </h3>
-          <span className="">Chair</span>
+          <span className="">{item.category}</span>
         </div>
         <div className="product__card-buttom d-flex align-items-center justify-content-between p-2">
-          <span className="price">$299</span>
-          <motion.span whileTap={{ scale: 1.1 }}>
+          <span className="price">${item.price}</span>
+          <motion.span whileTap={{ scale: 1.1 }} onClick={addToCart}>
             <i className="ri-add-line"></i>
           </motion.span>
         </div>
@@ -32,5 +50,14 @@ const ProductCard = ({item}) => {
     </Col>
   );
 };
-
+ProductCard.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    imgUrl: PropTypes.string.isRequired,
+    productName: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    category: PropTypes.string.isRequired,
+    // Add other properties as needed
+  }).isRequired,
+};
 export default ProductCard;

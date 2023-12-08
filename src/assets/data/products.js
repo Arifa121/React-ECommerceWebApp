@@ -4,8 +4,8 @@ import productImg03 from "../images/double-sofa-03.png";
 
 import productImg04 from "../images/single-sofa-01.jpg";
 import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg06 from "../images/single-sofa-5.png";
+import productImg007 from "../images/single-sofa-03.jpg";
 
 import productImg07 from "../images/arm-chair-01.png";
 import productImg08 from "../images/arm-chair-02.png";
@@ -19,10 +19,10 @@ import productImg16 from "../images/phone-04.jpg";
 import productImg17 from "../images/phone-05.jpg";
 import productImg18 from "../images/phone-06.jpg";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
+import productImg19 from "../images/watch 1.1.png";
+import productImg20 from "../images/watch 1.2.png";
+import productImg21 from "../images/watch 1.3.png";
+import productImg22 from "../images/watch 1.4.png";
 
 import productImg23 from "../images/wireless-01.png";
 
@@ -436,7 +436,7 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Titan Raga",
     imgUrl: productImg19,
     category: "watch",
     price: 299,
@@ -459,7 +459,7 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Titan Reva for Easy Reader",
     imgUrl: productImg20,
     category: "watch",
     price: 299,
@@ -482,7 +482,7 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Titan Reva 2.0",
     imgUrl: productImg21,
     category: "watch",
     price: 299,
@@ -505,7 +505,7 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Titan Reva for princess",
     imgUrl: productImg22,
     category: "watch",
     price: 399,

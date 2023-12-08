@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer pt-5">
       <Container>
         <Row>
-          <Col lg="4" md="6" className="mb-4">
+          <Col lg="4" md="6">
             <div className="logo ">
               <h1 className="text-white">SmartMart</h1>
             </div>
@@ -18,7 +18,7 @@ const Footer = () => {
               eum eligendi illum!
             </p>
           </Col>
-          <Col lg="3" md="4" sm="6" className="mb-4">
+          <Col lg="3" md="4" sm="6">
             <div className="footer__quick-links">
               <h4 className="quick__links-title fs-5 ">Top Categories</h4>
               <ListGroup>
@@ -37,7 +37,7 @@ const Footer = () => {
               </ListGroup>
             </div>
           </Col>
-          <Col lg="2" md="6" sm="6" className="mb-4">
+          <Col lg="2" md="6" sm="6">
             <div className="footer__quick-links">
               <h4 className="quick__links-title fs-5">Useful Links</h4>
               <ListGroup>
@@ -56,7 +56,7 @@ const Footer = () => {
               </ListGroup>
             </div>
           </Col>
-          <Col lg="3" md="6" className="mb-4">
+          <Col lg="3" md="6">
             <div className="footer__quick-links">
               <h4 className="quick__links-title fs-5">Contact</h4>
               <ListGroup className="footer__contact">
@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="12">
-            <p className="footer__copyright mt-5 text-center">
+            <p className="footer__copyright">
               Copyright {year} developed by Arifa. All rights reserved.
             </p>
           </Col>
