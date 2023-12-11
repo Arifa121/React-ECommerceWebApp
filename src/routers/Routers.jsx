@@ -8,10 +8,10 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home1 from "../pages/Home1";
-import Cart from "../pages/Cart";
+import Cart from "../pages/Cart1";
 import Shop from "../pages/Shop";
 import Checkout from "../pages/Checkout";
-import ProductDetails from "../pages/ProductDetails";
+import ProductDetails1 from "../pages/ProductDetails1";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import About from "../pages/About";
@@ -28,7 +28,7 @@ const Routers = () => {
       <Route path="contact" element={<Contact />} />
       <Route path="checkout" element={<Checkout />} />
       <Route path="shop" element={<Shop />} />
-      <Route path="shop/:id" element={<ProductDetails />} />
+      <Route path="shop/:id" element={<ProductDetails1 />} />
       <Route path="cart" element={<Cart />} />
       <Route path="login" element={<Login />} />
       <Route path="sign" element={<Signup />} />

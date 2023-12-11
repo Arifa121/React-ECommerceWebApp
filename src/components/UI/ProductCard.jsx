@@ -5,7 +5,7 @@ import { Col } from "reactstrap";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
 
@@ -16,11 +16,11 @@ const ProductCard = ({ item }) => {
       cartActions.addItem({
         id: item.id,
         productName: item.productName,
-        image: item.imgUrl,
+        imgUrl: item.imgUrl,
         price: item.price,
       }),
     );
-    alert("product added to cart");
+    toast.success("Product added successfully");
   };
 
   return (
@@ -52,7 +52,7 @@ const ProductCard = ({ item }) => {
 };
 ProductCard.propTypes = {
   item: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     imgUrl: PropTypes.string.isRequired,
     productName: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,

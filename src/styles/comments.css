@@ -1,0 +1,6 @@
+.form__group span i {
+  color: coral;
+}
+.form__group span {
+  cursor: pointer;
+}

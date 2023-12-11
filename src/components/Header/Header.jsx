@@ -1,10 +1,12 @@
 import React, { useRef, useEffect } from "react";
+// useNavigate
 import { Link, useLocation } from "react-router-dom";
 import { Container, Row } from "reactstrap";
 import logo from "../../assets/images/eco-logo.png";
 import userIcon from "../../assets/images/user-icon.png";
 import "./header.css";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 const nav__links = [
   {
     path: "home",
@@ -28,8 +30,13 @@ const nav__links = [
   },
 ];
 const Header = () => {
+  // const navigate = useNavigate();
+  // const navigateToCart = () => {
+  //   navigate("/cart");
+  // };
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
 
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
@@ -89,9 +96,12 @@ const Header = () => {
                   <span className="badge">10</span>
                 </i>
               </span>
+              {/* onClick={navigateToCart} */}
               <span className="cart__icon">
-                <i className="ri-shopping-bag-line"></i>
-                <span className="badge">2</span>
+                <Link to="/cart">
+                  <i className="ri-shopping-bag-line"></i>
+                  <span className="badge">{totalQuantity}</span>
+                </Link>
               </span>
               <span>
                 <motion.img

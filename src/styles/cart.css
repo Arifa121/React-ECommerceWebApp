@@ -1,0 +1,21 @@
+td i {
+  cursor: pointer;
+}
+td,
+th {
+  color: var(--primary-color);
+}
+.table tr td img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover;
+}
+.a {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover;
+}
+.motion i {
+  cursor: pointer;
+  padding-left: 3px;
+}

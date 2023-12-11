@@ -9,6 +9,8 @@ import ProductList from "../components/UI/ProductList";
 import products from "../assets/data/products";
 import Clock from "../components/UI/Clock";
 import counterImg from "../assets/images/counter-timer-img.png";
+import Helmet from "../components/Helmet/Helmet";
+
 const Home1 = () => {
   const year = new Date().getFullYear();
   const [trendingProducts, setTrendingProducts] = useState([]);
@@ -40,7 +42,7 @@ const Home1 = () => {
     setBestSaleProducts(filteredBestSalegProducts);
   }, []);
   return (
-    <>
+    <Helmet title="Home">
       <section className="hero__section">
         <Container>
           <Row>
@@ -133,8 +135,13 @@ const Home1 = () => {
           </Row>
         </Container>
       </section>
-    </>
+    </Helmet>
   );
 };
-
+// Home1.propTypes = {
+//   title: PropTypes.shape({
+//     title: PropTypes.string.isRequired,
+//     // Add other properties as needed
+//   }).isRequired,
+// };
 export default Home1;
