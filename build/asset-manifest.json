@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.12a89646.css",
-    "main.js": "/static/js/main.023e8532.js",
+    "main.css": "/static/css/main.8d5b5246.css",
+    "main.js": "/static/js/main.7ca544a6.js",
     "static/media/arm-chair-01.png": "/static/media/arm-chair-01.6839b76e25eeeb352fc6.png",
     "static/media/arm-chair-02.png": "/static/media/arm-chair-02.3f1902cba8e33d241945.png",
     "static/media/single-sofa-01.jpg": "/static/media/single-sofa-01.db24b9feed7582c4e98d.jpg",
     "static/media/single-sofa-03.jpg": "/static/media/single-sofa-03.0d976c067034347df78d.jpg",
     "static/media/single-sofa-02.jpg": "/static/media/single-sofa-02.c27d595e87065035a135.jpg",
     "static/media/remixicon.svg?t=1701175860820": "/static/media/remixicon.d481f4ec6f533b68684e.svg",
+    "static/media/cbg.jpg": "/static/media/cbg.10f677a3c71c782cb34f.jpg",
     "static/media/phone-06.jpg": "/static/media/phone-06.29ce26519b75270863b7.jpg",
     "static/media/remixicon.eot?t=1701175860820": "/static/media/remixicon.f578d5e2aa55cd051f99.eot",
     "static/media/remixicon.ttf?t=1701175860820": "/static/media/remixicon.59234ca5372c115b8595.ttf",
@@ -32,11 +33,11 @@
     "static/media/wireless-03.png": "/static/media/wireless-03.102199ac2c306820fe70.png",
     "static/media/wireless-01.png": "/static/media/wireless-01.1a76d777727c50ca0294.png",
     "index.html": "/index.html",
-    "main.12a89646.css.map": "/static/css/main.12a89646.css.map",
-    "main.023e8532.js.map": "/static/js/main.023e8532.js.map"
+    "main.8d5b5246.css.map": "/static/css/main.8d5b5246.css.map",
+    "main.7ca544a6.js.map": "/static/js/main.7ca544a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.12a89646.css",
-    "static/js/main.023e8532.js"
+    "static/css/main.8d5b5246.css",
+    "static/js/main.7ca544a6.js"
   ]
 }

@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /opt/yarn-v1.22.19/bin/yarn.js add iconv-lite@0.6.3
+  /usr/local/bin/node /opt/yarn-v1.22.19/bin/yarn.js add @reduxjs/toolkit@2.0.1
 
 PATH: 
   /usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
@@ -8,13 +8,13 @@ Yarn version:
   1.22.19
 
 Node version: 
-  20.9.0
+  20.10.0
 
 Platform: 
   linux x64
 
 Trace: 
-  Error: EEXIST: file already exists, symlink '../../../acorn/bin/acorn' -> '/workspaces/sandbox/node_modules/acorn-import-assertions/node_modules/.bin/acorn'
+  Error: ENOENT: no such file or directory, copyfile '/root/.cache/yarn/v6/npm-immer-9.0.21-1e025ea31a40f24fb064f1fef23e931496330176-integrity/node_modules/immer/dist/immer.cjs.development.js' -> '/workspaces/sandbox/node_modules/react-dev-utils/node_modules/immer/dist/immer.cjs.development.js'
 
 npm manifest: 
   {
@@ -33,6 +33,8 @@ npm manifest:
       "react": "18.2.0",
       "react-bootstrap": "2.9.1",
       "react-dom": "18.2.0",
+      "react-icons": "4.12.0",
+      "react-is": "18.2.0",
       "react-redux": "9.0.2",
       "react-router-dom": "6.20.1",
       "react-scripts": "5.0.1",
@@ -7881,6 +7883,16 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
     integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
   
+  react-icons@4.12.0:
+    version "4.12.0"
+    resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.12.0.tgz#54806159a966961bfd5cdb26e492f4dafd6a8d78"
+    integrity sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==
+  
+  react-is@18.2.0, react-is@^18.0.0:
+    version "18.2.0"
+    resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
+    integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+  
   react-is@^16.13.1, react-is@^16.3.2:
     version "16.13.1"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -7890,11 +7902,6 @@ Lockfile:
     version "17.0.2"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
     integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
-  
-  react-is@^18.0.0:
-    version "18.2.0"
-    resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
-    integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
   
   react-lifecycles-compat@^3.0.4:
     version "3.0.4"
